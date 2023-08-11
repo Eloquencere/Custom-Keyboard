@@ -1,7 +1,3 @@
-
-Made with :heart: by [Eloquencere](https://github.com/Eloquencere) and [spacebiz24](https://github.com/spacebiz24)
-___
-
 # Specification
 ## Requirements
 - 3x3 Keyboard
@@ -91,3 +87,5 @@ ___
 
 [Generating random numbers in Verilog](https://stackoverflow.com/questions/34011576/generating-random-numbers-in-verilog)
 
+___
+Made with :heart: by [Eloquencere](https://github.com/Eloquencere) and [spacebiz24](https://github.com/spacebiz24)
