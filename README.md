@@ -1,3 +1,7 @@
+
+Made with :heart: by [Eloquencere](https://github.com/Eloquencere) and [spacebiz24](https://github.com/spacebiz24)
+___
+
 # Specification
 ## Requirements
 - 3x3 Keyboard
