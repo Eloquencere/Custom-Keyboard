@@ -1,4 +1,5 @@
 class generator;
+    rand packet master_pkt = new;
     packet pkt_to_driver;
     mailbox generator_mailbox;
     
@@ -12,9 +13,9 @@ class generator;
     task dispatch;
         repeat(total_packets+1)
         begin
-            pkt_to_driver = new;
             if(packet_count) // if packet_count == 0, all values are 0(reset condition)
-                pkt_to_driver.randomize();
+                master_pkt.randomize();
+            pkt_to_driver = new master_pkt;
             
             generator_mailbox.put(pkt_to_driver);
             
