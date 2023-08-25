@@ -15,8 +15,8 @@ class generator;
         begin
             if(packet_count) // if packet_count == 0, all values are 0(reset condition)
                 master_pkt.randomize();
-            pkt_to_driver = new master_pkt;
             
+            pkt_to_driver = new master_pkt;
             generator_mailbox.put(pkt_to_driver);
             
             if(pkt_to_driver.condition)
