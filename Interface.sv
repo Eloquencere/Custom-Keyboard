@@ -8,11 +8,10 @@ interface DUT_interface(input clk);
     
     clocking driver_clocking @(posedge clk);
         output in_key;
-        output out_key;
     endclocking
     
     clocking monitor_clocking @(posedge clk);
         input in_key;
         input out_key;
     endclocking
-endinterface
+endinterface : DUT_interface
