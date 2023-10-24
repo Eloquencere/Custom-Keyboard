@@ -1,0 +1,249 @@
+# vsim TestBench_Top -sv_seed random -c -do "run -all;exit" -solvefaildebug=2 
+# Start time: 22:03:22 on Oct 24,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.Design_sv_unit(fast)
+# Loading work.Top_sv_unit(fast)
+# Loading work.TestBench_Top(fast)
+# Loading work.test(fast)
+# Loading work.DUT_interface(fast)
+# Sv_Seed = 3023994806
+# run -all
+# Generator created a valid packet
+#                    0: in_key = 000000000, packet no. 0
+# Generator created an invalid packet
+#                    0: in_key = 011000000, packet no. 1
+# Generator created a valid packet
+#                    0: in_key = 001000000, packet no. 2
+# Generator created an invalid packet
+#                    0: in_key = 111111111, packet no. 3
+# Generator created an invalid packet
+#                    0: in_key = 111111111, packet no. 4
+# Generator created an invalid packet
+#                    0: in_key = 111011111, packet no. 5
+# Generator created a valid packet
+#                    0: in_key = 010000000, packet no. 6
+# Generator created a valid packet
+#                    0: in_key = 000100000, packet no. 7
+# ../Generator.sv(17): randomize() failed due to conflicts between the following constraints:
+# 	../Packet.sv(19): cases { if ((condition == 0)) {(rand_key <= 8);} }
+# 	../Packet.sv(21): cases { if ((condition == 1)) {(rand_key <= 5);} }
+# 	../Packet.sv(23): cases { if ((condition == 2)) {((rand_key % 3) != 2);} }
+# 	../Packet.sv(25): cases { if ((!(condition inside { 0, 1, 2 }))) {(rand_range > 1);} }
+# Where:
+# 	rand_range = 4'h0 /* random  */
+# 	rand_key = 4'he /* random  */
+# Given:
+# 	bit [1:0] condition
+# ** Note: (vsim-7106) Use vsim option '-solvefailtestcase[=filename]' to generate a simplified testcase that will reproduce the failure.
+# ** Warning: (vsim-7084) No solutions exist which satisfy the specified constraints; randomize() failed.
+# 
+#    Time: 0 ps  Iteration: 2  Process: /Top_sv_unit::environment::test/#FORK#34_4f5f04ba File: ../Generator.sv Line: 17
+# ** Error: Assertion error.
+#    Time: 0 ps  Scope: Top_sv_unit.generator.dispatch File: ../Generator.sv Line: 17
+# Generator created a valid packet
+#                    0: in_key = 000000000, packet no. 8
+# Generator created an invalid packet
+#                    0: in_key = 111111111, packet no. 9
+# Generator created a valid packet
+#                    0: in_key = 001000000, packet no. 10
+# Generator created a valid packet
+#                    0: in_key = 000001000, packet no. 11
+# Generator created a valid packet
+#                    0: in_key = 010000000, packet no. 12
+# ../Generator.sv(17): randomize() failed due to conflicts between the following constraints:
+# 	../Packet.sv(19): cases { if ((condition == 0)) {(rand_key <= 8);} }
+# 	../Packet.sv(21): cases { if ((condition == 1)) {(rand_key <= 5);} }
+# 	../Packet.sv(23): cases { if ((condition == 2)) {((rand_key % 3) != 2);} }
+# 	../Packet.sv(25): cases { if ((!(condition inside { 0, 1, 2 }))) {(rand_range > 1);} }
+# Where:
+# 	rand_range = 4'h1 /* random  */
+# 	rand_key = 4'he /* random  */
+# Given:
+# 	bit [1:0] condition
+# ** Note: (vsim-7106) Use vsim option '-solvefailtestcase[=filename]' to generate a simplified testcase that will reproduce the failure.
+# ** Warning: (vsim-7084) No solutions exist which satisfy the specified constraints; randomize() failed.
+# 
+#    Time: 0 ps  Iteration: 2  Process: /Top_sv_unit::environment::test/#FORK#34_4f5f04ba File: ../Generator.sv Line: 17
+# ** Error: Assertion error.
+#    Time: 0 ps  Scope: Top_sv_unit.generator.dispatch File: ../Generator.sv Line: 17
+# Generator created a valid packet
+#                    0: in_key = 000000000, packet no. 13
+# Generator created a valid packet
+#                    0: in_key = 000001000, packet no. 14
+# Generator created an invalid packet
+#                    0: in_key = 011000000, packet no. 15
+# Generator created an invalid packet
+#                    0: in_key = 000000000, packet no. 16
+# ../Generator.sv(17): randomize() failed due to conflicts between the following constraints:
+# 	../Packet.sv(19): cases { if ((condition == 0)) {(rand_key <= 8);} }
+# 	../Packet.sv(21): cases { if ((condition == 1)) {(rand_key <= 5);} }
+# 	../Packet.sv(23): cases { if ((condition == 2)) {((rand_key % 3) != 2);} }
+# 	../Packet.sv(25): cases { if ((!(condition inside { 0, 1, 2 }))) {(rand_range > 1);} }
+# Where:
+# 	rand_range = 4'h1 /* random  */
+# 	rand_key = 4'he /* random  */
+# Given:
+# 	bit [1:0] condition
+# ** Note: (vsim-7106) Use vsim option '-solvefailtestcase[=filename]' to generate a simplified testcase that will reproduce the failure.
+# ** Warning: (vsim-7084) No solutions exist which satisfy the specified constraints; randomize() failed.
+# 
+#    Time: 0 ps  Iteration: 2  Process: /Top_sv_unit::environment::test/#FORK#34_4f5f04ba File: ../Generator.sv Line: 17
+# ** Error: Assertion error.
+#    Time: 0 ps  Scope: Top_sv_unit.generator.dispatch File: ../Generator.sv Line: 17
+# Generator created a valid packet
+#                    0: in_key = 000000000, packet no. 17
+# Generator created a valid packet
+#                    0: in_key = 010000000, packet no. 18
+# Generator created an invalid packet
+#                    0: in_key = 111111111, packet no. 19
+# Generator created an invalid packet
+#                    0: in_key = 111101111, packet no. 20
+# Driver passed
+#                40000: in_key = 000000000, signals driven 0
+# Monitor Received
+#               360000: in_key = 000000000, out_key =  0, signals received 0
+# Scoreboard Received packet no. 0
+# No key is pressed
+# Driver passed
+#               400000: in_key = 011000000, signals driven 1
+# Monitor Received
+#               720000: in_key = 000000000, out_key =  0, signals received 1
+# Scoreboard Received packet no. 1
+# No key is pressed
+# Driver passed
+#               760000: in_key = 001000000, signals driven 2
+# Monitor Received
+#              1080000: in_key = 000000000, out_key =  0, signals received 2
+# Scoreboard Received packet no. 2
+# No key is pressed
+# Driver passed
+#              1120000: in_key = 111111111, signals driven 3
+# Driver changed the key
+#              1160000: in_key = 111111111
+# Monitor Received
+#              1440000: in_key = 000000000, out_key =  0, signals received 3
+# Scoreboard Received packet no. 3
+# No key is pressed
+# Driver passed
+#              1480000: in_key = 111111111, signals driven 4
+# Monitor Received
+#              1800000: in_key = 000000000, out_key =  0, signals received 4
+# Scoreboard Received packet no. 4
+# No key is pressed
+# Driver passed
+#              1840000: in_key = 111011111, signals driven 5
+# Monitor Received
+#              2160000: in_key = 000000000, out_key =  0, signals received 5
+# Scoreboard Received packet no. 5
+# No key is pressed
+# Driver passed
+#              2200000: in_key = 010000000, signals driven 6
+# Monitor Received
+#              2520000: in_key = 000000000, out_key =  0, signals received 6
+# Scoreboard Received packet no. 6
+# No key is pressed
+# Driver passed
+#              2560000: in_key = 000100000, signals driven 7
+# Monitor Received
+#              2880000: in_key = 000000000, out_key =  0, signals received 7
+# Scoreboard Received packet no. 7
+# No key is pressed
+# Driver passed
+#              2920000: in_key = 000000000, signals driven 8
+# Monitor Received
+#              3240000: in_key = 000000000, out_key =  0, signals received 8
+# Scoreboard Received packet no. 8
+# No key is pressed
+# Driver passed
+#              3280000: in_key = 111111111, signals driven 9
+# Monitor Received
+#              3600000: in_key = 000000000, out_key =  0, signals received 9
+# Scoreboard Received packet no. 9
+# No key is pressed
+# Driver passed
+#              3640000: in_key = 001000000, signals driven 10
+# Monitor Received
+#              3960000: in_key = 000000000, out_key =  0, signals received 10
+# Scoreboard Received packet no. 10
+# No key is pressed
+# Driver passed
+#              4000000: in_key = 000001000, signals driven 11
+# Monitor Received
+#              4320000: in_key = 000000000, out_key =  0, signals received 11
+# Scoreboard Received packet no. 11
+# No key is pressed
+# Driver passed
+#              4360000: in_key = 010000000, signals driven 12
+# Monitor Received
+#              4680000: in_key = 000000000, out_key =  0, signals received 12
+# Scoreboard Received packet no. 12
+# No key is pressed
+# Driver passed
+#              4720000: in_key = 000000000, signals driven 13
+# Monitor Received
+#              5040000: in_key = 000000000, out_key =  0, signals received 13
+# Scoreboard Received packet no. 13
+# No key is pressed
+# Driver passed
+#              5080000: in_key = 000001000, signals driven 14
+# Monitor Received
+#              5400000: in_key = 000000000, out_key =  0, signals received 14
+# Scoreboard Received packet no. 14
+# No key is pressed
+# Driver passed
+#              5440000: in_key = 011000000, signals driven 15
+# Driver released the key
+# Monitor Received
+#              5760000: in_key = 000000000, out_key =  0, signals received 15
+# Scoreboard Received packet no. 15
+# No key is pressed
+# Driver passed
+#              5800000: in_key = 000000000, signals driven 16
+# Monitor Received
+#              6120000: in_key = 000000000, out_key =  0, signals received 16
+# Scoreboard Received packet no. 16
+# No key is pressed
+# Driver passed
+#              6160000: in_key = 000000000, signals driven 17
+# Monitor Received
+#              6480000: in_key = 000000000, out_key =  0, signals received 17
+# Scoreboard Received packet no. 17
+# No key is pressed
+# Driver passed
+#              6520000: in_key = 010000000, signals driven 18
+# Monitor Received
+#              6840000: in_key = 000000000, out_key =  0, signals received 18
+# Scoreboard Received packet no. 18
+# No key is pressed
+# Driver passed
+#              6880000: in_key = 111111111, signals driven 19
+# Monitor Received
+#              7200000: in_key = 000000000, out_key =  0, signals received 19
+# Scoreboard Received packet no. 19
+# No key is pressed
+# Driver passed
+#              7240000: in_key = 111101111, signals driven 20
+# Monitor Received
+#              7560000: in_key = 000000000, out_key =  0, signals received 20
+# Scoreboard Received packet no. 20
+# No key is pressed
+# Total mismatched packets 0
+# ** Note: $finish    : ../Environment.sv(29)
+#    Time: 7560 ns  Iteration: 1  Instance: /TestBench_Top/tst
+# End time: 22:03:47 on Oct 24,2023, Elapsed time: 0:00:25
+# Errors: 3, Warnings: 3
