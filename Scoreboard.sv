@@ -7,7 +7,7 @@ class scoreboard;
     endfunction
     
     int prev_out_key;
-    int packets_evaluated;
+    int packets_evaluated, packets_mismatched;
     task evaluate;
         forever
         begin
@@ -20,7 +20,10 @@ class scoreboard;
             else if((pkt_from_monitor.in_key == 0) && (pkt_from_monitor.out_key === prev_out_key))
                 $display("No key is pressed");
             else
+            begin
                 $display("DUT failed this test");
+                packets_mismatched++;
+            end
             
             prev_out_key = pkt_from_monitor.out_key;
             
