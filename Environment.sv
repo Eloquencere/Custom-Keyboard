@@ -43,5 +43,6 @@ class environment;
         wait(gen.packet_count == drv.signals_driven);
         wait(drv.signals_driven == mntr.signals_received);
         wait(mntr.signals_received == scrbrd.packets_evaluated);
+        $display("Total mismatched packets %0d", scrbrd.packets_mismatched);
     endtask
 endclass
