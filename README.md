@@ -1,3 +1,5 @@
+# Description
+This project involves the design and verification of a custom keyboard using SystemVerilog. The keyboard uses a Mealy Finite State Machine to model keypress states and a synchronizer and decoder for scan code conversion. A class-based testbench and custom driver code were implemented to handle a variety of test cases, including normal and edge cases such as key changes and multiple key presses. This comprehensive testing approach ensures the robustness and reliability of the keyboard design.
 # Specification
 ## Requirements
 - 3x3 Keyboard
